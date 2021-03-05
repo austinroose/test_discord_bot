@@ -11,6 +11,7 @@ client.on('message', async message => {
     // Voice only works in guilds, if the message does not come from a guild,
     // we ignore it
     const is_admin = message.member.roles.highest.name === 'adminid'
+    
     if (is_admin) {
         if (!message.guild) return;
 
